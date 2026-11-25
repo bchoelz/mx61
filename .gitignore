@@ -1,0 +1,20 @@
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime live state, temporary slot snapshots & live WAV audio captures
+presets/active_live_profile.json
+captures/live_*.wav
+captures/probe_*.wav
+captures/ab_*.wav
+backups/snapshots/
