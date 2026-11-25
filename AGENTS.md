@@ -2,6 +2,8 @@
 
 Este documento define as **regras obrigatórias de segurança de hardware, governança de memória e arquitetura de síntese** para qualquer agente que opere sobre o sintetizador **Yamaha MX61** neste repositório.
 
+> **Leitura Obrigatória ao Iniciar em Novo Terminal**: Leia primeiro [`docs/SESSION-HANDOFF-CONTEXTO.md`](docs/SESSION-HANDOFF-CONTEXTO.md) e [`docs/ARC-001-ANL-v1.0-estrategia-engenharia-mx61.md`](docs/ARC-001-ANL-v1.0-estrategia-engenharia-mx61.md) para carregar todo o histórico da conversa, decisões alinhadas com o usuário e o roteiro exato de continuidade com o hardware conectado.
+
 ---
 
 ## 1. Regras de Ouro de Proteção de Memória e Slots do MX61

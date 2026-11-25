@@ -18,6 +18,7 @@ Este projeto evolui a metodologia desenvolvida em [`bchoelz/px5s`](https://githu
 
 ## Documentação e Manuais Oficiais (`docs/`)
 
+- [SESSION-HANDOFF-CONTEXTO.md](docs/SESSION-HANDOFF-CONTEXTO.md) — **Histórico completo da conversa, decisões alinhadas com o usuário e roteiro passo a passo de continuidade para agentes/terminais**.
 - [ARC-001-ANL-v1.0-estrategia-engenharia-mx61.md](docs/ARC-001-ANL-v1.0-estrategia-engenharia-mx61.md) — Avaliação do projeto `px5s`, comparativo arquitetural PX-5S vs. MX61, mapa completo de endereços MIDI SysEx e estratégia em 4 fases.
 - [mx49mx61_en_om_b0.pdf](docs/mx49mx61_en_om_b0.pdf) — *Yamaha MX49/MX61 Owner's Manual (Rev. B0)*.
 - [mx49mx61mx88_en_rm_b0.pdf](docs/mx49mx61mx88_en_rm_b0.pdf) — *Yamaha MX49/MX61/MX88 Reference Manual (Rev. B0)*.
@@ -68,11 +69,11 @@ python3 src/mx61_cli.py inspect-preset --bank 1 --program 1
 python3 src/mx61_cli.py check-touch --duration 8
 
 # 6. Testar um perfil no Edit Buffer (RAM, sem gravar na Flash) e comparar A/B com o original
-python3 src/mx61_cli.py preview-profile --profile cfx_concert_pad_mw
+python3 src/mx61_cli.py preview --profile cfx_concert_pad_mw
 
 # 7. Calibrar acusticamente via USB-Audio Digital + Lógica Fuzzy contra as referências
 python3 src/mx61_cli.py auto-calibrate --profile cfx_concert_pad_mw
 
 # 8. Salvar em um slot User Voice vazio (ex.: U001) com snapshot automático de rollback
-python3 src/mx61_cli.py store-user-voice --profile cfx_concert_pad_mw --slot 1
+python3 src/mx61_cli.py store-voice --profile cfx_concert_pad_mw --slot 1
 ```
